@@ -57,3 +57,11 @@ public:
 
 	friend bool sortByPrice(const Car &lhs, const Car &rhs);
 };
+
+bool sortByName(const Car &lhs, const Car &rhs) { return lhs.name < rhs.name; }
+
+bool sortByYear(const Car &lhs, const Car &rhs) { return lhs.year < rhs.year; }
+
+bool sortByEngine_capacity(const Car &lhs, const Car &rhs) { return lhs.engine_capacity < rhs.engine_capacity; }
+
+bool sortByPrice(const Car &lhs, const Car &rhs) { return lhs.price < rhs.price; }
