@@ -65,3 +65,11 @@ bool sortByYear(const Car &lhs, const Car &rhs) { return lhs.year < rhs.year; }
 bool sortByEngine_capacity(const Car &lhs, const Car &rhs) { return lhs.engine_capacity < rhs.engine_capacity; }
 
 bool sortByPrice(const Car &lhs, const Car &rhs) { return lhs.price < rhs.price; }
+
+class Ñar_dealership
+{
+private:
+	vector<Car> cars;
+public:
+
+};
