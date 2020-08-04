@@ -87,4 +87,11 @@ public:
 		}
 	}
 
+	void ShowAllCars()
+	{
+		for (auto iter = cars.begin(); iter < cars.end(); iter++)
+		{
+			(*iter).ShowInfo();
+		}
+	}
 };
