@@ -136,4 +136,16 @@ public:
 			}
 		}
 	}
+
+	void Find_by_engine_capacity(int engine_capacity)
+	{
+		for (auto iter = cars.begin(); iter < cars.end(); iter++)
+		{
+			if ((*iter).Get_engine_capacity() == engine_capacity)
+			{
+				(*iter).ShowInfo();
+			}
+		}
+	}
+
 };
