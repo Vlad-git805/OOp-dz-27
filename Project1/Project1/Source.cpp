@@ -94,4 +94,24 @@ public:
 			(*iter).ShowInfo();
 		}
 	}
+
+	void Sort_by_name()
+	{
+		sort(cars.begin(), cars.end(), sortByName);
+	}
+
+	void Sort_by_Year()
+	{
+		sort(cars.begin(), cars.end(), sortByYear);
+	}
+
+	void Sort_by_engine_capacity()
+	{
+		sort(cars.begin(), cars.end(), sortByEngine_capacity);
+	}
+
+	void Sort_by_price()
+	{
+		sort(cars.begin(), cars.end(), sortByPrice);
+	}
 };
