@@ -172,4 +172,17 @@ public:
 		return totalprice;
 	}
 
+	void Reduce_price_by_20_percent_for_all_cars_older_than_15()
+	{
+		for (auto iter = cars.begin(); iter < cars.end(); iter++)
+		{
+			if (2020 - (*iter).Get_year() >= 15)
+			{
+				int price = (*iter).Get_price();
+				price /= 0.2;
+				(*iter).Set_price(price);
+			}
+		}
+	}
+
 };
