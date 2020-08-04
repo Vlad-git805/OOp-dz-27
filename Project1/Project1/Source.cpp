@@ -148,4 +148,15 @@ public:
 		}
 	}
 
+	void Find_by_price(int price)
+	{
+		for (auto iter = cars.begin(); iter < cars.end(); iter++)
+		{
+			if ((*iter).Get_price() == price)
+			{
+				(*iter).ShowInfo();
+			}
+		}
+	}
+
 };
