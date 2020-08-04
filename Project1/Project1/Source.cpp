@@ -159,4 +159,17 @@ public:
 		}
 	}
 
+	int Total_price_of_cars_younger_than_5_years()
+	{
+		int totalprice = 0;
+		for (auto iter = cars.begin(); iter < cars.end(); iter++)
+		{
+			if (2020 - (*iter).Get_year() < 5)
+			{
+				totalprice += (*iter).Get_price();
+			}
+		}
+		return totalprice;
+	}
+
 };
