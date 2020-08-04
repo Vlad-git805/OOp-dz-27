@@ -185,4 +185,16 @@ public:
 		}
 	}
 
+	void Check_that_all_cars_have_the_correct_year_of_manufacture()
+	{
+		if (all_of(cars.begin(), cars.end(), [](auto& element) {return element.Get_name_year_of_issue() >= 1900 && element.Get_name_year_of_issue() <= 2020; }))
+		{
+			cout << "All cars have the correct year of manufacture" << endl;
+		}
+		else
+		{
+			cout << "not all cars have the correct year of manufacture" << endl;
+		}
+	}
+
 };
