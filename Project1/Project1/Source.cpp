@@ -75,4 +75,16 @@ public:
 	{
 		cars.push_back(car);
 	}
+
+	void Delete_cars_that_less_2000()
+	{
+		for (auto iter = cars.begin(); iter < cars.end(); iter++)
+		{
+			if ((*iter).Get_year() < 2000)
+			{
+				cars.erase(iter);
+			}
+		}
+	}
+
 };
