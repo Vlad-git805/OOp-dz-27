@@ -125,4 +125,15 @@ public:
 			}
 		}
 	}
+
+	void Find_by_year(int year)
+	{
+		for (auto iter = cars.begin(); iter < cars.end(); iter++)
+		{
+			if ((*iter).Get_year() == year)
+			{
+				(*iter).ShowInfo();
+			}
+		}
+	}
 };
