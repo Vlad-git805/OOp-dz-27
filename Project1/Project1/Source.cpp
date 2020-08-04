@@ -114,4 +114,15 @@ public:
 	{
 		sort(cars.begin(), cars.end(), sortByPrice);
 	}
+
+	void Find_by_name(string name)
+	{
+		for (auto iter = cars.begin(); iter < cars.end(); iter++)
+		{
+			if ((*iter).Get_name() == name)
+			{
+				(*iter).ShowInfo();
+			}
+		}
+	}
 };
