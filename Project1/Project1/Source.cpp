@@ -71,5 +71,8 @@ class Ñar_dealership
 private:
 	vector<Car> cars;
 public:
-
+	void Add_car(const Car& car)
+	{
+		cars.push_back(car);
+	}
 };
